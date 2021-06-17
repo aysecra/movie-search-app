@@ -1,6 +1,7 @@
 import Home from '../pages/Home';
 import Favorite from '../pages/Favorite';
 import Detail from '../pages/Detail';
+import { Router } from 'react-router-dom';
 
 export const routes = [
   {
@@ -17,4 +18,12 @@ export const routes = [
     title: 'Detail',
     isHeaderElement: false,
   },
+  {
+    path: '/favorites',
+    exact: true,
+    component: <Favorite />,
+    title: 'Favorite',
+    isHeaderElement: true,
+  }
 ];
+
